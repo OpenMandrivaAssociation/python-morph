@@ -35,7 +35,7 @@ find -type f -name '*.css' -exec dos2unix -U {} \;
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/%{_libdir}/python%{pyver}/site-packages
+mkdir -p $RPM_BUILD_ROOT/%{py_puresitedir}
 cp PURELIB/adtools/morph08pybase/morph.py $RPM_BUILD_ROOT/%{py_puresitedir}
 cp PURELIB/adtools/morph08pybase/morphdemo.py $RPM_BUILD_ROOT/%{py_puresitedir}
 cp PURELIB/adtools/adpil10all/adpil.py $RPM_BUILD_ROOT/%{py_puresitedir}
