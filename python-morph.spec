@@ -14,6 +14,7 @@ BuildArch: noarch
 Requires: python-numeric
 Requires: python-imaging
 Buildrequires: dos2unix
+Buildrequires: python-devel
 
 %description
 The pymorph Morphology Toolbox for Python is a powerful collection of latest
