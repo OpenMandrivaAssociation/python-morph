@@ -8,6 +8,7 @@ Patch0:  pymorph-demo-import.patch
 License: BSD
 Group: Sciences/Other
 Url: http://www.mmorph.com/pymorph/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Provides: pymorph = %{version}-%{release}
 BuildArch: noarch
 Requires: python-numeric
