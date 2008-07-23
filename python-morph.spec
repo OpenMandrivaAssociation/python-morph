@@ -2,7 +2,7 @@
 Summary: Morphology Toolbox for Python
 Name: python-morph
 Version: 0.8
-Release: %mkrel 3
+Release: %mkrel 5
 Source0: pymorph-%{version}.tar.bz2
 Patch0:  pymorph-demo-import.patch
 License: BSD
