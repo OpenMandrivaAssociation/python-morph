@@ -28,8 +28,8 @@ Dougherty and Roberto Lotufo, published by SPIE, Aug 2003, ISBN=0-8194-4720-X.
 %prep
 %setup -q -n pymorph
 %patch0
-find -type f -name '*.html' -exec dos2unix -U {} \;
-find -type f -name '*.css' -exec dos2unix -U {} \;
+find -type f -name '*.html' -exec dos2unix {} \;
+find -type f -name '*.css' -exec dos2unix {} \;
 
 %build
 
