@@ -1,0 +1,19 @@
+*** PURELIB/adtools/morph08pybase/morphdemo.py.orig	2005-09-25 21:38:57.000000000 +0200
+--- PURELIB/adtools/morph08pybase/morphdemo.py	2005-09-25 21:39:08.000000000 +0200
+***************
+*** 36,42 ****
+      mmdruler()       -- Detect defects in a ruler.
+      mmdsoil()        -- Detect fractures in soil.
+  """
+! from morph08pybase.morph import *
+  # =========================================================================
+  #
+  #   mmdairport - Detecting runways in satellite airport imagery.
+--- 36,42 ----
+      mmdruler()       -- Detect defects in a ruler.
+      mmdsoil()        -- Detect fractures in soil.
+  """
+! from morph import *
+  # =========================================================================
+  #
+  #   mmdairport - Detecting runways in satellite airport imagery.
