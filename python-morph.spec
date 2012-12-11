@@ -28,8 +28,8 @@ Dougherty and Roberto Lotufo, published by SPIE, Aug 2003, ISBN=0-8194-4720-X.
 %prep
 %setup -q -n pymorph
 %patch0
-find -type f -name '*.html' -exec dos2unix {} \;
-find -type f -name '*.css' -exec dos2unix {} \;
+find -type f -name '*.html' -exec dos2unix -U {} \;
+find -type f -name '*.css' -exec dos2unix -U {} \;
 
 %build
 
@@ -51,4 +51,41 @@ rm -rf $RPM_BUILD_ROOT
 %doc PLATLIB/adtools/morph08pybase/data
 %doc PLATLIB/adtools/morph08pybase/html
 
+
+
+
+%changelog
+* Tue Sep 15 2009 Thierry Vignaud <tv@mandriva.org> 0.8-7mdv2010.0
++ Revision: 442315
+- rebuild
+
+* Sat Jan 03 2009 Funda Wang <fwang@mandriva.org> 0.8-6mdv2009.1
++ Revision: 323811
+- rebuild
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.8-5mdv2009.0
++ Revision: 242421
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sun Aug 26 2007 Gaëtan Lehmann <glehmann@mandriva.org> 0.8-3mdv2008.0
++ Revision: 71569
+- fix build on x86_64
+- build requires python
+- reb?\195uild
+
+
+* Wed Aug 09 2006 glehmann
++ 08/09/06 20:05:30 (55107)
+use py_puresitedir
+
+* Sun Jul 30 2006 glehmann
++ 07/30/06 10:26:36 (42700)
+Import python-morph
+
+* Sun Sep 25 2005 <gaetan.lehmann@jouy.inra.fr> 0.8-1mdk
+- initial contrib
 
