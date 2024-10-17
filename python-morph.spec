@@ -7,7 +7,7 @@ Source0: pymorph-%{version}.tar.bz2
 Patch0:  pymorph-demo-import.patch
 License: BSD
 Group: Sciences/Other
-Url: http://www.mmorph.com/pymorph/
+Url: https://www.mmorph.com/pymorph/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Provides: pymorph = %{version}-%{release}
 BuildArch: noarch
